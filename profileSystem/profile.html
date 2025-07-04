@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showcase | profile</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <section
+            class="flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-white border-b border-gray-300">
+            <div class="flex gap-4 items-center font-semibold">
+                <button class="bg-gray-200 rounded-lg p-2" onclick="homePage()"><img class="w-5" src="../Image/home.png"
+                        alt="home icon"></button>
+                <button>Find talent</button>
+                <button>Inspiration</button>
+                <button>Jobs</button>
+                <button onclick="community()">My Network</button>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-2 mt-3 md:mt-0">
+                <h1 class="text-2xl md:text-3xl font-sans italic font-bold">SHOW CASE</h1>
+                <p class="text-sm">Show yourself</p>
+            </div>
+            <div class="flex items-center gap-3 mt-3 md:mt-0">
+                <input type="text" placeholder="Search" class="bg-gray-200 rounded-lg p-2 w-36 md:w-52">
+                <button class="bg-black text-white px-3 py-1 rounded-full">Share Now</button>
+                <button onclick="window.location.href='ProfileManagement/profile.html'"
+                    class="bg-gray-200 w-9 h-9 rounded-full flex items-center justify-center">
+                    <img class="w-6 h-6" src="../Image/user.png" alt="User Icon">
+                </button>
+
+
+            </div>
+        </section>
+    </header>
+
+
+    <!-- Body Container -->
+    <div class="grid grid-cols-12 gap-6 bg-[#f4f2ee] px-20 py-6 min-h-screen">
+
+        <!-- Left Side -->
+        <div class="col-span-9 space-y-6">
+            <!-- Profile Section -->
+            <div class="bg-white p-4 shadow rounded-lg">
+                <!-- Cover -->
+                <div class="relative w-full h-80 bg-sky-200 rounded-lg">
+                    <img src="../Image/cover.JPG" alt="" class="w-full h-full rounded-lg object-cover">
+                    <button class="absolute top-5 right-2 bg-white p-2 rounded-md shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-camera"></i>
+                        <p class="text-sm font-normal">Edit cover photo</p>
+                    </button>
+                </div>
+
+                <!-- Profile Info Card -->
+                <div class="bg-white p-6 -mt-20 rounded-lg shadow-md relative z-10">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <!-- Profile Picture -->
+                            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-md -mt-16">
+                                <img src="../Image/cover.JPG" alt="Profile" class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- User Info -->
+                            <div>
+                                <h1 class="text-2xl font-bold text-gray-900">MARUF SIKDER</h1>
+                                <p class="text-sm text-gray-500">Dhaka, Bangladesh <a href="#"
+                                        class="text-blue-600">Contact info</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Edit Button -->
+                        <button class="bg-white border rounded-full p-2 hover:shadow-md mt-4 md:mt-0">
+                            <i class="fa-solid fa-pen-to-square text-gray-600 w-5 h-5"></i>
+                        </button>
+                    </div>
+
+                    <!-- Profile Action Buttons -->
+                    <div class="mt-4 flex flex-wrap gap-3">
+                        <button class="px-4 py-2 bg-blue-600 text-white text-sm rounded-full">About</button>
+                        <button class="px-4 py-2 border border-gray-400 text-sm rounded-full">Posts</button>
+                        <button class="px-4 py-2 border border-gray-400 text-sm rounded-full">Friends</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="border border border-gray-300 rounded-lg p-4 shadow-sm bg-white">
+                <!-- Header -->
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-800">Experience</h2>
+                        <p class="text-sm text-gray-500">Showcase your accomplishments and get up to 2X as many profile
+                            views and connections</p>
+                    </div>
+                </div>
+
+                <!-- Experience item -->
+                <div class="flex items-start space-x-3 mt-4 p-3 border rounded-md hover:shadow-sm relative">
+                    <!-- Icon -->
+                    <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-md">
+                        <i class="fa-solid fa-briefcase text-gray-500"></i>
+                    </div>
+                    <!-- Job Info -->
+                    <div>
+                        <p class="text-sm font-medium text-gray-800">Job Title</p>
+                        <p class="text-sm text-gray-500">Organization</p>
+                        <p class="text-sm text-gray-400">2023 - present</p>
+                    </div>
+                    <!-- Close icon -->
+                    <div class="absolute top-2 right-2">
+                        <button class="text-gray-600 hover:text-gray-800">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Add Experience Button -->
+                <button
+                    class="mt-4 px-4 py-1.5 text-blue-600 border border-blue-600 rounded-full text-sm hover:bg-blue-50">
+                    Add experience
+                </button>
+            </div>
+
+            <!--Skill -->
+            <div class="border border border-gray-300 rounded-lg p-4 shadow-sm bg-white">
+                <!-- Header -->
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-800">Skills</h2>
+                        <p class="text-sm text-gray-500">Communicate your fit for new opportunities - 50% of hirers use skills data to fill their roles</p>
+                    </div>
+                </div>
+
+                <!-- Skill item -->
+                <div class="flex items-start space-x-3 mt-4 p-3 border rounded-md hover:shadow-sm relative">
+                    <h3>Engineering</h3>
+                </div>
+
+                <!-- Add skill Button -->
+                <button
+                    class="mt-4 px-4 py-1.5 text-blue-600 border border-blue-600 rounded-full text-sm hover:bg-blue-50">
+                    Add Skills
+                </button>
+            </div>
+
+
+            <!--Education -->
+            <div class="border border border-gray-300 rounded-lg p-4 shadow-sm bg-white">
+                <!-- Header -->
+                <div>
+                    <h2 class="text-lg font-semibold text-gray-800">Education</h2>
+                </div>
+
+                <!-- Skill item -->
+                <div class="mt-4 p-3 border rounded-md opacity-50 hover:shadow-sm">
+                    <h2>Daffodil International University</h2>
+                    <p>BSc in CSE</p>
+                    <p>2022 - present</p>
+                </div>
+
+                <!-- Add skill Button -->
+                <button
+                    class="mt-4 px-4 py-1.5 text-blue-600 border border-blue-600 rounded-full text-sm hover:bg-blue-50">
+                    Add
+                </button>
+            </div>
+
+
+        </div>
+
+        <!-- Right Side: Sidebar -->
+        <div class="col-span-3 space-y-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="flex justify-between items-center">
+                     <h3 class="font-semibold text-lg mb-2">Profile language</h3>
+                     <!-- Edit Button -->
+                    <button class="bg-white border rounded-full p-2 hover:shadow-md mt-4 md:mt-0">
+                        <i class="fa-solid fa-pen-to-square text-gray-600 w-5 h-5"></i>
+                    </button>
+                </div>
+               
+                <p class="text-sm text-gray-600 mb-4">English</p>
+                <div class="border-t pt-4">
+                    <h3 class="font-semibold text-lg mb-2">Public profile & URL</h3>
+                    <p class="text-sm text-blue-600 break-words">www.linkedin.com/in/maruf-sikder-undefined-359022364
+                    </p>
+                </div>
+            </div>
+
+            <div class="max-w-xs bg-white rounded-lg shadow p-4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-5">People you may know</h3>
+            
+                <!-- Profile section -->
+                <div class="flex items-center gap-3">
+                    <!-- Profile image -->
+                    <img src="../Image/cover.JPG" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+            
+                    <!-- Info -->
+                    <div class="flex-1">
+                        <p class="font-semibold text-md text-gray-800 flex items-center gap-1">Maruf Sikder</p>
+                        <p class="text-xs text-gray-600 relative">
+                            Creative Writing | Translation | Public Speaking |...
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Connect Button -->
+                <button
+                    class="mt-4 flex items-center justify-center gap-2 w-full text-sm text-gray-700 border border-gray-400 rounded-full px-4 py-1.5 hover:bg-gray-50">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Connect
+                </button>
+                <!-- horizontal line -->
+                <div class="border-t my-4"></div>
+
+                <div class="flex items-center gap-3">
+                    <!-- Profile image -->
+                    <img src="../Image/cover.JPG" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+            
+                    <!-- Info -->
+                    <div class="flex-1">
+                        <p class="font-semibold text-md text-gray-800 flex items-center gap-1">Maruf Sikder</p>
+                        <p class="text-xs text-gray-600 relative">
+                            Creative Writing | Translation | Public Speaking |...
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Connect Button -->
+                <button
+                    class="mt-4 flex items-center justify-center gap-2 w-full text-sm text-gray-700 border border-gray-400 rounded-full px-4 py-1.5 hover:bg-gray-50">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Connect
+                </button>
+                <!-- horizontal line -->
+                <div class="border-t my-4"></div>
+
+                <div class="flex items-center gap-3">
+                    <!-- Profile image -->
+                    <img src="../Image/cover.JPG" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+            
+                    <!-- Info -->
+                    <div class="flex-1">
+                        <p class="font-semibold text-md text-gray-800 flex items-center gap-1">Maruf Sikder</p>
+                        <p class="text-xs text-gray-600 relative">
+                            Creative Writing | Translation | Public Speaking |...
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Connect Button -->
+                <button
+                    class="mt-4 flex items-center justify-center gap-2 w-full text-sm text-gray-700 border border-gray-400 rounded-full px-4 py-1.5 hover:bg-gray-50">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Connect
+                </button>
+                <!-- horizontal line -->
+                <div class="border-t my-4"></div>
+
+                <div class="flex items-center gap-3">
+                    <!-- Profile image -->
+                    <img src="../Image/cover.JPG" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+            
+                    <!-- Info -->
+                    <div class="flex-1">
+                        <p class="font-semibold text-md text-gray-800 flex items-center gap-1">Maruf Sikder</p>
+                        <p class="text-xs text-gray-600 relative">
+                            Creative Writing | Translation | Public Speaking |...
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Connect Button -->
+                <button
+                    class="mt-4 flex items-center justify-center gap-2 w-full text-sm text-gray-700 border border-gray-400 rounded-full px-4 py-1.5 hover:bg-gray-50">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Connect
+                </button>
+                <!-- horizontal line -->
+                <div class="border-t my-4"></div>
+
+                <div class="flex items-center gap-3">
+                    <!-- Profile image -->
+                    <img src="../Image/cover.JPG" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+            
+                    <!-- Info -->
+                    <div class="flex-1">
+                        <p class="font-semibold text-md text-gray-800 flex items-center gap-1">Maruf Sikder</p>
+                        <p class="text-xs text-gray-600 relative">
+                            Creative Writing | Translation | Public Speaking |...
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- Connect Button -->
+                <button
+                    class="mt-4 flex items-center justify-center gap-2 w-full text-sm text-gray-700 border border-gray-400 rounded-full px-4 py-1.5 hover:bg-gray-50">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Connect
+                </button>
+                <!-- horizontal line -->
+                <div class="border-t my-4"></div>
+
+                <!-- button Show All -->
+                <button class="w-full text-sm text-blue-600 hover:border border-blue-600 rounded-full px-4 py-1.5">
+                    Show all
+                </button>
+
+            </div>
+            </div>
+        
+        
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="mt-10">
+        <div class="flex flex-col md:flex-row justify-between items-center px-6 py-8 bg-white text-sm font-semibold">
+            <h3 class="text-2xl font-sans italic font-bold">SHOW CASE</h3>
+            <div class="flex flex-wrap gap-3 mt-3 md:mt-0">
+                <button>Branding</button>
+                <button>Design</button>
+                <button>Advertising</button>
+                <button>Blog</button>
+                <button>About</button>
+                <button>Careers</button>
+                <button>Support</button>
+            </div>
+            <div class="flex gap-3 mt-3 md:mt-0">
+                <img class="w-6 h-6" src="../Image/twitter.png" alt="">
+                <img class="w-6 h-6" src="../Image/4375133_logo_youtube_icon.png" alt="">
+                <img class="w-6 h-6" src="../Image/5296499_fb_facebook_facebook logo_icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between px-6 pb-8 text-sm text-gray-700">
+            <p>Copyright © 2023 - All right reserved by SHOW CASE</p>
+            <div class="flex gap-4 mt-2 md:mt-0">
+                <button onclick="openTerms()">Terms</button>
+                <button onclick="openPolicy()">Privacy</button>
+                <button>Cookies</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

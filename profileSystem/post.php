@@ -170,7 +170,7 @@ function getProfileImagePath($profile_picture)
             </a>
 
             <!-- Desktop Nav -->
-            <div class="hidden md:flex text-center pl-20">
+            <div class="hidden md:flex text-center pl-20 space-x-12">
                 <a href="../home.php" class="pl-10 hover:text-sky-500">Home</a>
                 <a href="../aboutUs.php" class="pl-10 hover:text-sky-500">About Us</a>
                 <a href="../event.php" class="pl-10 hover:text-sky-500">Events</a>
@@ -179,9 +179,9 @@ function getProfileImagePath($profile_picture)
             </div>
 
             <!-- Right Section -->
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-12">
                 <!-- Messenger -->
-                <a href="messenger.php" title="Messages"
+                <a href="../messenger.php" title="Messages"
                     class="relative inline-flex items-center justify-center w-8 h-8 text-blue-700 hover:text-blue-900 transition-all duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -196,7 +196,7 @@ function getProfileImagePath($profile_picture)
                         class="flex items-center border-l-2 border-gray-300 p-2">
                         <img src="<?php echo $profile_picture . '?v=' . time(); ?>"
                             alt="Profile Picture"
-                            class="rounded-full h-10 w-10 border-2 border-gray-300 ml-4">
+                            class="rounded-full h-10 w-10 border-2 border-gray-300 ml-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 ml-1" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"

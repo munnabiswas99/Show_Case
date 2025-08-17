@@ -167,7 +167,7 @@ $edu_query = $conn->query("SELECT * FROM user_details WHERE user_id=$user_id AND
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-10">
+            <nav class="hidden md:flex space-x-20">
                 <a href="../home.php" class="hover:text-sky-500">Home</a>
                 <a href="../aboutUs.php" class="hover:text-sky-500">About Us</a>
                 <a href="../event.php" class="hover:text-sky-500">Events</a>
@@ -176,9 +176,9 @@ $edu_query = $conn->query("SELECT * FROM user_details WHERE user_id=$user_id AND
             </nav>
 
             <!-- Right Icons -->
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-12">
                 <!-- Messenger -->
-                <a href="messenger.php" title="Messages"
+                <a href="../messenger.php" title="Messages"
                     class="relative inline-flex items-center justify-center w-8 h-8 text-blue-700 hover:text-blue-900 transition-all duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -189,10 +189,10 @@ $edu_query = $conn->query("SELECT * FROM user_details WHERE user_id=$user_id AND
 
                 <!-- Profile -->
                 <div class="relative inline-block text-left">
-                    <button type="button" id="profileMenuButton" class="flex items-center border-l-2 border-gray-300 pl-3">
+                    <button type="button" id="profileMenuButton" class="flex items-center border-l-2 border-gray-300 pl-3 ">
                         <img src="<?php echo $profile_picture . '?v=' . time(); ?>"
                             alt="Profile Picture"
-                            class="rounded-full h-10 w-10 border-2 border-gray-300">
+                            class="rounded-full h-10 w-10 border-2 border-gray-300 ml-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 ml-1" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
